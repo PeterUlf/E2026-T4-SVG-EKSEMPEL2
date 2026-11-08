@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interaktiv SVG – slide 18</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="kort">
+  <svg class="figur-lag" viewBox="0 0 600 300" aria-hidden="true">
+    <use class="baggrund" href="./interaktiv-svg-kort.svg#baggrund"></use>
+    <use class="punkt" href="./interaktiv-svg-kort.svg#punkt"></use>
+    <use class="figur" href="./interaktiv-svg-kort.svg#person"></use>
+  </svg>
+</div>
+<p id="besked" aria-live="polite">Figuren står ved indgangen.</p>
+<details class="accordion-item" id="details-indgang" name="steder" data-position="indgang">
+  <summary>Indgang</summary>
+  <p>Her begynder dit besøg.</p>
+</details>
+<details class="accordion-item" id="details-scene" name="steder" data-position="scene" open>
+  <summary>Scene</summary>
+  <p>Her kan du høre musikken.</p>
+</details>
+<details class="accordion-item" id="details-cafe" name="steder" data-position="cafe">
+  <summary>Café</summary>
+  <p>Her vokser personen, og punktet bliver synligt.</p>
+</details>
+  <script src="script.js"></script>
+</body>
+</html>

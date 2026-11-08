@@ -1,0 +1,43 @@
+body { margin: 0; padding: 12px; font: 16px/1.4 system-ui, sans-serif; color: #18352e; background: #f7f5ef; }
+.kort { max-width: 440px; margin-inline: auto; }
+.kort > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.figur-lag {
+  pointer-events: none;
+  --x: 0%;
+  --y: 0%;
+}
+.figur {
+  transform-box: view-box;
+  transform-origin: 10% 40%;
+  translate: var(--x) var(--y);
+  scale: 1;
+  transition: translate 0.5s, scale 0.5s;
+}
+.figur-lag[data-position="scene"] {
+  --x: 40%;
+  --y: 0%;
+}
+.figur-lag[data-position="cafe"] {
+  --x: 40%;
+  --y: 40%;
+}
+.figur-lag[data-position="cafe"] .figur { scale: 1.2; }
+.punkt {
+  opacity: 0;
+  scale: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: opacity 0.5s, scale 0.5s;
+}
+.figur-lag[data-position="cafe"] .punkt { opacity: 1; scale: 1.2; }
+details { border-bottom: 1px solid #9daea4; padding: 5px 0; }
+summary { cursor: pointer; font-weight: 650; }
+summary:focus-visible { outline: 3px solid #b53e25; outline-offset: 3px; }
+p { margin: 6px 0; }
+@media (prefers-reduced-motion: reduce) {
+  .figur, .punkt { transition: none; }
+}
