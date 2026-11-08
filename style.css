@@ -5,7 +5,7 @@ body { margin: 0; padding: 12px; font: 16px/1.4 system-ui, sans-serif; color: #1
   width: 100%;
   height: auto;
 }
-.figur-lag {
+.svg-kort {
   pointer-events: none;
   --x: 0%;
   --y: 0%;
@@ -17,15 +17,15 @@ body { margin: 0; padding: 12px; font: 16px/1.4 system-ui, sans-serif; color: #1
   scale: 1;
   transition: translate 0.5s, scale 0.5s;
 }
-.figur-lag[data-position="scene"] {
+.svg-kort[data-position="scene"] {
   --x: 40%;
   --y: 0%;
 }
-.figur-lag[data-position="cafe"] {
+.svg-kort[data-position="cafe"] {
   --x: 40%;
   --y: 40%;
 }
-.figur-lag[data-position="cafe"] .figur { scale: 1.2; }
+.svg-kort[data-position="cafe"] .figur { scale: 1.2; }
 .punkt {
   opacity: 0;
   scale: 1;
@@ -33,7 +33,7 @@ body { margin: 0; padding: 12px; font: 16px/1.4 system-ui, sans-serif; color: #1
   transform-origin: center;
   transition: opacity 0.5s, scale 0.5s;
 }
-.figur-lag[data-position="cafe"] .punkt { opacity: 1; scale: 1.2; }
+.svg-kort[data-position="cafe"] .punkt { opacity: 1; scale: 1.2; }
 details { border-bottom: 1px solid #9daea4; padding: 5px 0; }
 summary { cursor: pointer; font-weight: 650; }
 summary:focus-visible { outline: 3px solid #b53e25; outline-offset: 3px; }

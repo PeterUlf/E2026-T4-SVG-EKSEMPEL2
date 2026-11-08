@@ -1,4 +1,4 @@
-const kort = document.querySelector(".figur-lag");
+const kort = document.querySelector(".svg-kort");
 
 document.querySelector("#details-indgang")
   .addEventListener("toggle", opdaterFigur);
