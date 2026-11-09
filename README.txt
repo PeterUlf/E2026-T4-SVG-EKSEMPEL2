@@ -6,7 +6,7 @@ Pak alle filer ud i samme mappe. Åbn mappen i VS Code.
 Scene er åben fra start. Prøv Café, Indgang og Scene.
 Luk alle afsnit: Figuren vender tilbage til Indgang.
 
-Øvelse: Lad personen vokse ved Scene i stedet for Café,
-men behold punktet ved Café. Ret CSS-reglen for .figur.
+Øvelse: Få figuren til at bevæge sig langsommere mellem stederne.
+Ret tiden i transition i CSS-reglen for .figur.
 
 Kilde: src/content/docs/svg/interaktiv-svg.mdx, slide 18.

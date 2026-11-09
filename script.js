@@ -1,10 +1,13 @@
 const kort = document.querySelector(".svg-kort");
 
-document.querySelector("#details-indgang")
+document
+  .querySelector("#details-indgang")
   .addEventListener("toggle", opdaterFigur);
-document.querySelector("#details-scene")
+document
+  .querySelector("#details-scene")
   .addEventListener("toggle", opdaterFigur);
-document.querySelector("#details-cafe")
+document
+  .querySelector("#details-cafe")
   .addEventListener("toggle", opdaterFigur);
 
 function opdaterFigur() {
@@ -14,7 +17,7 @@ function opdaterFigur() {
     document.querySelector("#besked").textContent =
       "Valgt sted: " + aabent.querySelector("summary").textContent;
   } else {
-    delete kort.dataset.position;
+    kort.dataset.position = "indgang";
     document.querySelector("#besked").textContent =
       "Alt er lukket. Figuren står ved indgangen.";
   }

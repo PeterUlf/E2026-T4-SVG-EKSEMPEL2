@@ -20,9 +20,6 @@
       <rect x="47" y="83" width="26" height="27" rx="7" />
       <path d="M53 110v10 M67 110v10" fill="none" stroke-width="6" />
     </g>
-    <g id="punkt">
-      <circle cx="300" cy="240" r="24" fill="none" stroke="#b53e25" stroke-width="4" />
-    </g>
   
 
 
